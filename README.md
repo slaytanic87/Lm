@@ -3,6 +3,7 @@
 This is a demo functional language called Lm
 
 ## Grammar
+```
 _prog_      -> program _scope_ +
 _scope_     -> { _sdecls_ } | € +
 _sdecls_    -> _decl_ _sdecls_ | _function_ _sdecls_ | € +
@@ -39,6 +40,7 @@ _expr_     -> _expr_ + _term_ | _expr_ - _term_ | _term_ +
 _term_     -> _term_ * _unary_ | _term_ / _unary_ | _unary_ +
 _unary_    -> ! _unary_ | - _unary_ | _factor_ +
 _factor_   -> ( _bool_ ) | _funcall_ | id _offset_ | num | real | bool | true | false +
+```
 
 | Token classes                       |           |
 |-------------------------------------|:---------:|
