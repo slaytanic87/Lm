@@ -1,6 +1,6 @@
 # Lm
 
-This is a demo functional language called Lm
+This is a Kotlin based demo compiler for a functional language called Lm
 
 ## Grammar
 
