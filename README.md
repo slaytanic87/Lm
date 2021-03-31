@@ -44,7 +44,7 @@ _factor_   -> ( _bool_ ) | _funcall_ | id _offset_ | num | real | bool | true | 
 
 | Token classes                       |           |
 |-------------------------------------|:---------:|
-|id   : identifier                    | or  = \|\ |
+|id   : identifier                    | or  = \|  |
 |num  : Integer-Zahl                  | and = &&  |
 |real : Floating Point number         | eq  = ==  |
 |char : Zeichen                       | ne  = !=  |
