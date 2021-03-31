@@ -52,7 +52,7 @@ _factor_   -> ( _bool_ ) | _funcall_ | id _offset_ | num | real | bool | true | 
 |basic = num \| real \| char \| bool  | ge  = >=  |
 
 ### reserves words
-if, else, while, do, for, break, true, false, program, func, return +
+if, else, while, do, for, break, true, false, program, func, return  
 
 ## Example
 ```
