@@ -3,44 +3,44 @@
 This is a demo functional language called Lm
 
 ## Grammar
-```
-_prog_      -> program _scope_ +
-_scope_     -> { _sdecls_ } | € +
-_sdecls_    -> _decl_ _sdecls_ | _function_ _sdecls_ | € +
-_function_  -> _type_ func id _param_ _block_ +
-_param_     -> ( _pdecls_ ) | () +
-_pdecls_    -> _type_ id , _pdecls_ | _type_ id +
-_block_   -> { _decls_ _stmts_ } +
-_decls_   -> _decl_ _decls_ | € +
-_decl_    -> _type_ _ids_ ; +
-_ids_     -> id , _ids_ | id +
-_type_    -> basic _dims_ +
-_dims_    -> [ num ] _dims_ | € +
-_stmts_   -> _stmt_ _stmts_ | € +
-_stmt_    -> ; +
-         | if ( _bool_ ) _stmt_ +
-         | if ( _bool_ ) _stmt_ else _stmt_ +
-         | while ( _bool_ ) _stmt_ +
-         | do _stmt_ while ( _bool_ ) ; +
-         | for ( _assign_ ; _bool_ ; _assign_ ) _stmt_ +
-         | break ; +
-         | _block_ +
-         | _assign_ ; +
-         | return _bool_ ; +
-         | _bool_ ; +
-_funcall_   -> id (paramcall) +
-_paramcall_ -> bool, paramcall | bool +
-_assign_   -> id _offset_ = _bool_ +
-_offset_   -> [ id ] _offset_ | [ num ] _offset_ | € +
-_bool_     -> _bool_ or _join_ | _join_ +
-_join_     -> _join_ and _equality_ | _equality_ +
-_equality_ -> _equality_ eq _rel_ | _equality_ ne _rel_ | _rel_ +
-_rel_      -> _expr_ < _expr_ | _expr_ le _expr_ | _expr_ ge _expr_ | _expr_ > _expr_ | _expr_ +
-_expr_     -> _expr_ + _term_ | _expr_ - _term_ | _term_ +
-_term_     -> _term_ * _unary_ | _term_ / _unary_ | _unary_ +
-_unary_    -> ! _unary_ | - _unary_ | _factor_ +
-_factor_   -> ( _bool_ ) | _funcall_ | id _offset_ | num | real | bool | true | false +
-```
+
+_prog_      -> program _scope_\
+_scope_     -> { _sdecls_ } | € \
+_sdecls_    -> _decl_ _sdecls_ | _function_ _sdecls_ | € \
+_function_  -> _type_ func id _param_ _block_ \
+_param_     -> ( _pdecls_ ) | () \
+_pdecls_    -> _type_ id , _pdecls_ | _type_ id \
+_block_   -> { _decls_ _stmts_ } \
+_decls_   -> _decl_ _decls_ | € \
+_decl_    -> _type_ _ids_ ; \
+_ids_     -> id , _ids_ | id \
+_type_    -> basic _dims_ \
+_dims_    -> [ num ] _dims_ | € \
+_stmts_   -> _stmt_ _stmts_ | € \
+_stmt_    -> ; \
+         | if ( _bool_ ) _stmt_ \
+         | if ( _bool_ ) _stmt_ else _stmt_ \
+         | while ( _bool_ ) _stmt_ \
+         | do _stmt_ while ( _bool_ ) ; \
+         | for ( _assign_ ; _bool_ ; _assign_ ) _stmt_ \
+         | break ; \
+         | _block_ \
+         | _assign_ ; \
+         | return _bool_ ; \
+         | _bool_ ; \
+_funcall_   -> id (paramcall) \
+_paramcall_ -> bool, paramcall | bool \
+_assign_   -> id _offset_ = _bool_ \
+_offset_   -> [ id ] _offset_ | [ num ] _offset_ | € \
+_bool_     -> _bool_ or _join_ | _join_ \
+_join_     -> _join_ and _equality_ | _equality_ \
+_equality_ -> _equality_ eq _rel_ | _equality_ ne _rel_ | _rel_ \
+_rel_      -> _expr_ < _expr_ | _expr_ le _expr_ | _expr_ ge _expr_ | _expr_ > _expr_ | _expr_ \
+_expr_     -> _expr_ + _term_ | _expr_ - _term_ | _term_ \
+_term_     -> _term_ * _unary_ | _term_ / _unary_ | _unary_ \
+_unary_    -> ! _unary_ | - _unary_ | _factor_ \
+_factor_   -> ( _bool_ ) | _funcall_ | id _offset_ | num | real | bool | true | false \
+
 
 | Token classes                       |           |
 |-------------------------------------|:---------:|
