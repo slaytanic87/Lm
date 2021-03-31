@@ -1,0 +1,25 @@
+program {
+  int i; int j; float v; int[12] l;
+  float x; float[100] a;
+  bool b;
+  int func test (int h, int l) {
+    while ( true ) {
+        do i = i + 1; while( a[i] < v);
+        do {
+          j = j-1;
+        } while( a[j] > v);
+        if ( i >= j ) break;
+        x = a[i]; a[i] = a[j]; a[3] = x;
+        b = !b;
+        x = -v;
+    }
+    return i;
+  }
+  int func test2() {
+     return 10;
+  }
+  float func myfunction(int c) {
+     c = test(4,l[2]) + test2();
+     return a[1];
+  }
+}

@@ -1,0 +1,23 @@
+program {
+  int a;
+  int b;
+  int c;
+  int func test() {
+     a = a + 1;
+     c = 7;
+     if (a > 3) {
+       b = a + c;
+     }
+
+     return a;
+  }
+
+  int func hello(int a) {
+     if (a > 7) {
+       return 8;
+     } else {
+       c = a + c + b;
+     }
+     return c;
+  }
+}
