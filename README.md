@@ -45,10 +45,10 @@ _factor_   -> ( _bool_ ) | _funcall_ | id _offset_ | num | real | bool | true | 
 | Token classes                       |           |
 |-------------------------------------|:---------:|
 |id   : identifier                    | or  = \|  |
-|num  : Integer-Zahl                  | and = &&  |
+|num  : Integer-number                | and = &&  |
 |real : Floating Point number         | eq  = ==  |
-|char : Zeichen                       | ne  = !=  |
-|bool : Wahrheitswert                 | le  = \<= |
+|char : sign                          | ne  = !=  |
+|bool : boolean value                 | le  = \<= |
 |basic = num \| real \| char \| bool  | ge  = >=  |
 
 ### reserves words
