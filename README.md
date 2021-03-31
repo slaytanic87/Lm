@@ -39,7 +39,7 @@ _rel_      -> _expr_ < _expr_ | _expr_ le _expr_ | _expr_ ge _expr_ | _expr_ > _
 _expr_     -> _expr_ + _term_ | _expr_ - _term_ | _term_ \
 _term_     -> _term_ * _unary_ | _term_ / _unary_ | _unary_ \
 _unary_    -> ! _unary_ | - _unary_ | _factor_ \
-_factor_   -> ( _bool_ ) | _funcall_ | id _offset_ | num | real | bool | true | false \
+_factor_   -> ( _bool_ ) | _funcall_ | id _offset_ | num | real | bool | true | false
 
 
 | Token classes                       |           |
