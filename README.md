@@ -1,7 +1,7 @@
 # Lm
 
 This is a Kotlin based demo compiler for a functional language called Lm
-(Under contruction!)
+(TBD Register Alloc)
 ## Grammar
 
 _prog_      -> program _scope_\
